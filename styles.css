@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap');
+
+*{
+    font-family: Overlock;
+    display:flex;
+}
+.img{
+    width: 100px;
+    height: 300px;
+    display:flex;
+
+}
+.quote{
+    display:flex;
+    align-items: flex-end;
+}
