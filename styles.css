@@ -4,13 +4,21 @@
     font-family: Overlock;
     display:flex;
 }
+body{
+    display:flex;
+    flex-direction: column;
+}
 .img{
-    width: 100px;
-    height: 300px;
+    width: 50vh;
+    max-width: 400px;
     display:flex;
 
 }
 .quote{
     display:flex;
     align-items: flex-end;
+}
+form{
+    display: flex;
+    flex-direction: column;
 }
