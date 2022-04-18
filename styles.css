@@ -2,23 +2,8 @@
 
 *{
     font-family: Overlock;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
     display:flex;
-}
-body{
-    display:flex;
-    flex-direction: column;
-}
-.img{
-    width: 50vh;
-    max-width: 400px;
-    display:flex;
-
-}
-.quote{
-    display:flex;
-    align-items: flex-end;
-}
-form{
-    display: flex;
-    flex-direction: column;
 }

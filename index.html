@@ -5,44 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href="styles.css">
-    
-
 </head>
 <body>
-    <picture class="img">
+    <div class="leftSide">
         <!--<img src="sign-up-pic.jpeg" alt="A colorful rock landscape">-->
-    </picture>
-
-    <div class="quote">
-        <p>THIS is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.  Sign up now to get started.</p>
-        <p>You <em> know</em> you want to.</p>
     </div>
-    <form action="sign-up-form" method="post">
-        <fieldset>
-            <legend>Let's Do This!</legend>
-            <label for="firstName">First Name:</label>
-            <input type="text" name="firstName" id="firstName" placeholder="Odin">
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" name="lastName" id="lastName" placeholder="Allfather">
+    <div class="rightSide">
+        <div class="quote">
+            <p>THIS is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up now to get started!</p>
+            <p>You <em> know</em> you want to.</p>
+        </div>
+        <form action="sign-up-form" method="post">
+            <fieldset>
+                <legend>Let's Do This!</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Odin">
 
-            <label for="userEmail">Email Address:</label>
-            <input type="email" name="email" id="userEmail" placeholder="kevin@myspace.com">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Allfather">
 
-            <label for="phoneNumber">Phone Number</label>
-            <input type="tel" name="tel" id="tel" placeholder="123-456-789">
+                <label for="userEmail">Email Address:</label>
+                <input type="email" name="email" id="userEmail" placeholder="kevin@myspace.com">
 
-            <label for="userPassword">Password:</label>
-            <input type="password" name="password" id="userPassword" placeholder="******">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" name="tel" id="tel" placeholder="123-456-789">
 
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="******">
-        </fieldset>
+                <label for="userPassword">Password:</label>
+                <input type="password" name="password" id="userPassword" placeholder="******">
 
-        <button type="submit">Sign Up</button>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="******">
+            </fieldset>
 
-        <p>Already have an account? Log in</p>
+            <button type="submit">Sign Up</button>
 
-    </form>
+            <p>Already have an account? Log in</p>
+
+        </form>
+    </div>
 </body>
 </html>
