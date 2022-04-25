@@ -1,38 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap');
 
 *{
-    font-family: Overlock;
+    font-family: 'Monaco', sans-serif;
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    display: flex;
+    
     
     
 }
 body{
-    
+    display:flex; 
 }
 .leftSide{
     background-image: url('sign-up-pic.jpeg');
     height: 100vh;
-    width:50vh;
+    max-width:50vw;
     display:flex;
     flex-direction: column;
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 0px;
-    padding: 2px;
+    padding: 0px;
 }
 .rightSide{
     display: flex;
     height: 100vh;
-    width: 50vh;
+    width: 50vw;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 2px;
-    padding:2px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin:0px;
+    padding:5px;
+    background-color: rgb(249, 250, 251);
 }
 form{
     display:flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     flex-direction: column;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: rgb(255,255,255);
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: auto;
+    padding-bottom: 2em;
+}
+form :last-child{
+    padding-top: 2em;
 }
