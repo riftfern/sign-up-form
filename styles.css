@@ -5,42 +5,41 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    
-    
-    
 }
 body{
     display:flex; 
+    width:100vw;
+    height: 100vh;
 }
 .leftSide{
     background-image: url('sign-up-pic.jpeg');
-    height: 100vh;
-    max-width:50vw;
+    background-size: cover;
+    max-width:40vw;
     display:flex;
     flex-direction: column;
-    background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
 }
 .rightSide{
     display: flex;
-    height: 100vh;
-    width: 50vw;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    width: 60vw;
+    flex-flow: column nowrap;
     justify-content: center;
+    
     margin:0px;
     padding:5px;
     background-color: rgb(249, 250, 251);
+    
 }
 form{
     display:flex;
     flex-flow: row wrap;
-    flex-direction: column;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    gap:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: rgb(255,255,255);
+    box-shadow: rgb(255,255,255);
 }
 .quote{
     display: flex;
@@ -49,6 +48,11 @@ form{
     width: auto;
     padding-bottom: 2em;
 }
-form :last-child{
-    padding-top: 2em;
-}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width : 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
