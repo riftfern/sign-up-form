@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Overlock:ital@1&display=swap');
+:root{
+    --color: rgb(173, 64,235);
 
+}
 *{
-    font-family: 'Monaco', sans-serif;
+    font-family: 'Orelega One', cursive;
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
 body{
     display:flex; 
+    flex-flow:row wrap;
     width:100vw;
     height: 100vh;
 }
@@ -20,13 +24,14 @@ body{
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
+    align-items: center;
 }
 .rightSide{
     display: flex;
     width: 60vw;
     flex-flow: column nowrap;
     justify-content: center;
-    
+    align-items: center;
     margin:0px;
     padding:5px;
     background-color: rgb(249, 250, 251);
@@ -39,14 +44,35 @@ form{
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgb(255,255,255);
-    box-shadow: rgb(255,255,255);
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    font-size: 1.2rem;
+    align-items: center;
+}
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width:40%;
+    font-size:.7rem;
+    text-transform: uppercase;
+    opacity: 50%;
+
+}
+
+legend{
+    width:100%;
+    font-size:1.2rem;
+    font-weight:500;
+
 }
 .quote{
     display: flex;
     flex-direction: column;
-    height: 100px;
+    
     width: auto;
     padding-bottom: 2em;
+    font-weight: 500;
+    width: 90%;
+    font-size:2rem;
 }
 button, input, select, textarea {
     font-family: inherit;
@@ -56,3 +82,27 @@ button, input, select, textarea {
     margin: 0;
     box-sizing: border-box;
   }
+h1{
+    color:white;
+}
+button{
+    font-weight: 700;
+    font-size 1.2em;
+    border-radius: 5px;
+    margin:40px 0;
+    padding 10px 40px;
+    border: 2px solid var(--color);
+    background-color: rgb(255,255,255);
+}
+button:hover{
+    background-color: var(--color);
+}
+.logIn{
+    display:flex;
+    gap:5px;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color);
+}
